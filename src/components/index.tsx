@@ -38,36 +38,43 @@ const Markdown = () => {
   }
 
   const italicClick = () => {
-    setTextValue(`*${selection}*`)
+  let newText = `${textValue}` 
+    setTextValue(`*${newText + selection}*`)
   }
   
   const inlineClick = () => {
-    setTextValue(`\`${selection}\``)
+  let newText = `${textValue}` 
+    setTextValue(`\`${ newText + selection}\``)
   }
 
   const linkClick = () => {
-    setTextValue(`[text] (https://www.stackoverflow.com/)${selection}`)
+  let newText = `${textValue}` 
+    setTextValue(`[text] (https://www.stackoverflow.com/)${newText + selection}`)
   }
   
   const quoteClick = () => {
-    setTextValue(`> ${selection}`)
+  let newText = `${textValue}` 
+    setTextValue(`> ${newText + selection}`)
   }
   
   const codeClick = () => {
-    setTextValue(` ${selection}`)
+  let newText = `${textValue}` 
+    setTextValue(` ${newText + selection}`)
   }
 
   const numberClick = () => {
-
-    setTextValue(`1.${selection}`)
+  let newText = `${textValue}` 
+    setTextValue(`1.${newText + selection}`)
   }
 
   const bulletedClick = () => {
-    setTextValue(`-${selection}`)
+  let newText = `${textValue}` 
+    setTextValue(`-${newText + selection}`)
   }
 
   const horizontalClick = () => {
-    setTextValue(`---${selection}`)
+  let newText = `${textValue}` 
+    setTextValue(`---${newText + selection}`)
   }
 
 
