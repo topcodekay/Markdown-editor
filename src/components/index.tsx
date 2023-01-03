@@ -28,23 +28,22 @@ const Markdown = () => {
 
   let headerClick = () => {
   let newText = `${textValue}`
-  setTextValue(`# ${newText + selection}\n`)
-
+  setTextValue(newText + `# ${selection}\n`)
   }
 
   const boldClick = () => {
   let newText = `${textValue}` 
-    setTextValue(`**${newText + selection}**`)
+    setTextValue(newText + `**${selection}**\n`)
   }
 
   const italicClick = () => {
   let newText = `${textValue}` 
-    setTextValue(`*${newText + selection}*`)
+    setTextValue(newText + `*${selection}*\n`)
   }
   
   const inlineClick = () => {
   let newText = `${textValue}` 
-    setTextValue(`\`${ newText + selection}\``)
+    setTextValue(newText + `\`${selection}\`\n`)
   }
 
   const linkClick = () => {
