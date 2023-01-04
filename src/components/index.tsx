@@ -126,7 +126,7 @@ const Markdown = () => {
         </Box>
       <Box className="container">
         <Box onChange={handleChange} className="textarea" 
-        contentEditable suppressContentEditableWarning={true}>{textValue}
+        contentEditable suppressContentEditableWarning={true}> {textValue + ''}
         </Box>
         <Box className="output">
           <ReactMarkdown>{textValue}</ReactMarkdown>
